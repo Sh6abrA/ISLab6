@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lab4</title>
+</head>
+<body>
+    <table id="firstTable">
+        <caption>Значения критериев</caption>
+        <tr>
+            <th>Дома</th>
+            <th>В парке</th>
+            <th>На Черном море</th>
+            <th>Круиз на теплоходе</th>
+            <th>Горный курорт</th>
+            <th>Африканские страны</th>
+        </tr>
+        
+        <tr><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+        <tr><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td></tr>
+        <tr><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
+        <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+        <tr><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+    </table>
+    <table id="secondTable">
+        <caption>Матрица ЭС</caption>
+        <tr>
+            <th>Дома</th>
+            <th>В парке</th>
+            <th>На Черном море</th>
+            <th>Круиз на теплоходе</th>
+            <th>Горный курорт</th>
+            <th>Африканские страны</th>
+        </tr>
+        <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    </table>
+    <div class="instruments">
+        <div class="using">
+            <button id="randomClass">Случайный класс</button>
+            <button id="studyBtn" class="btn">Обучить</button>
+            <button id="expertBtn" class="btn">Экспертиза</button>
+            <label for="colNumberInput" class="label">Номер коллонки:</label>
+            <input id="colNumberInput" type="number" min="1" max="6">
+            <div id="randomClassVector"></div>
+        </div>
+        
+        <div id="output"></div>
+        <div id="detected-class"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
